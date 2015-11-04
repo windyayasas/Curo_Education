@@ -1,11 +1,6 @@
 
 <%@page import="java.sql.*"%>
-<%if (session==null ||session.getAttribute("username") == null)
- {
-        // Forward the control to login.jsp if authentication fails or session expires
-        request.getRequestDispatcher("login.jsp").forward(request,
-            response);
- }%>
+
 
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.text.DateFormat"%>
